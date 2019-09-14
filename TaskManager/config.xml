@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        id="org.tlima.taskmanager"
+        version="1.0.0">
+
+    <name>TaskManager</name>
+
+    <description>
+        Gerenciador de tarefas automáticos
+    </description>
+
+    <author href="http://cordova.io" email="thomas.lima01@fatec.sp.gov.br">
+        Lima, Thomas C.
+    </author>
+
+    <preference name="android-minSdkVersion" value="16" />
+    <platform name="android" />
+
+    <icon src="icon.png" />
+    <plugin name="cordova-plugin-splashscreen" />
+    <splash src="splash.png" />
+
+</widget>

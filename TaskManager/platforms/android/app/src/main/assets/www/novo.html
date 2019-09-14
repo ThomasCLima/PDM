@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<script src="script.js" language="javascript"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<title>Nova tarefa</title>
+</head>
+
+<body style="background-color: #002035">
+	<div class="container-fluid" style="background-color: #3585AA" align="center">
+		<h1>NOVA TAREFA</h1>
+	</div>
+	<div class="container-fluid">
+		<form>
+			<div class="form-group">
+				<label style="color:#fff">DE UM TÍTULO</label>
+				<input type="text" class="form-control form-control-lg" placeholder="Insira um texto aqui">
+			</div>
+			<div class="row">
+				<div class="col-xl-6 col-sm-12">
+					<div class="form-group">
+						<label style="color:#fff">INICIO</label>
+						<input type="date" class="form-control form-control-lg">
+						<input type="time" class="form-control form-control-lg">
+					</div>
+				</div>
+				<div class="col-xl-6 col-sm-12">
+					<div class="form-group">
+						<label style="color:#fff">FIM</label>
+						<input type="date" class="form-control form-control-lg">
+						<input type="time" class="form-control form-control-lg">
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div id="prioridade" class="form-group" style="border-style:solid ;border-color:rgb(255, 0, 0);background:red;">
+					<div class="btn-group" style="width:100%">
+						<input type="button" name="p_max" value="Min." class="btn btn-lg" style="background: linear-gradient(to right,green 0%, greenyellow 100%);width:25%;border:none;text-align:left">
+						<input type="button" name="p_alta" value="" class="btn btn-lg" style="background: linear-gradient(to right,greenyellow 0%, yellow 100%);width:25%;border:none">
+						<input type="button" name="p_media" value="" class="btn btn-lg" style="background: linear-gradient(to right,yellow 0%, orange 100%);width:25%;border:none">
+						<input type="button" name="p_baixa" value="Max." class="btn btn-lg" style="background: linear-gradient(to right,orange 0%, red 100%);width:25%;border:none;text-align:right">
+					</div>
+				</div>
+			</div>
+	</div>
+	<input type="submit" name="btnSalvar" value="Salvar" class="btn btn-success btn-block btn-lg" align="center" style="position:fixed; bottom:0px">
+	</form>
+	</div>
+
+
+	<footer>
+		<!-- JS -->
+		<script src="js/jquery.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+	</footer>
+
+</body>
+
+</html>
