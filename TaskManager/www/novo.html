@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Bootstrap CSS -->
-	<script src="script.js" language="javascript"></script>
+	<script src="js/script.js" language="javascript"></script>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<title>Nova tarefa</title>
 </head>
@@ -38,24 +38,70 @@
 				</div>
 			</div>
 			<div class="container-fluid">
-				<div id="prioridade" class="form-group" style="border-style:solid ;border-color:rgb(255, 0, 0);background:red;">
-					<div class="btn-group" style="width:100%">
-						<input type="button" name="p_max" value="Min." class="btn btn-lg" style="background: linear-gradient(to right,green 0%, greenyellow 100%);width:25%;border:none;text-align:left">
-						<input type="button" name="p_alta" value="" class="btn btn-lg" style="background: linear-gradient(to right,greenyellow 0%, yellow 100%);width:25%;border:none">
-						<input type="button" name="p_media" value="" class="btn btn-lg" style="background: linear-gradient(to right,yellow 0%, orange 100%);width:25%;border:none">
-						<input type="button" name="p_baixa" value="Max." class="btn btn-lg" style="background: linear-gradient(to right,orange 0%, red 100%);width:25%;border:none;text-align:right">
+				<div id="prioridade" class="form-group">
+					<label style="color:#fff">Nivel de prioridade</label>
+					<div id="group-prioridade"
+						 class="btn-group" 
+						 style="width:100%;
+								border-style:solid;
+								border-color:#ff0000;
+								background:linear-gradient(to right,#00FF00 0%, #FF0000 100%);">
+						<input type="button"
+							   onclick="prioridadeSelect(1)"
+							   name="p_1"
+							   value="Min."
+							   class="btn btn-lg"
+							   style="background:linear-gradient(to right,#00FF00 0%, #66FF00 100%);
+									  width:20%;
+									  border:none;
+									  text-align:left">
+						<input type="button"
+							   onclick="prioridadeSelect(2)" 
+							   name="p_2"
+							   value=""
+							   class="btn btn-lg"
+							   style="background:linear-gradient(to right,#66FF00 0%, #CCFF00 100%);
+									  width:20%;
+									  border:none">
+						<input type="button"
+							   onclick="prioridadeSelect(3)"
+							   name="p_3"
+							   value=""
+							   class="btn btn-lg"
+							   style="background:linear-gradient(to right,#CCFF00 0%, #FFCC00 100%);
+									  width:20%;
+									  border:none">
+						<input type="button"
+							   onclick="prioridadeSelect(4)" 
+							   name="p_4"
+							   value=""
+							   class="btn btn-lg"
+							   style="background:linear-gradient(to right,#FFCC00 0%, #FF6600 100%);
+									  width:20%;
+									  border:none">
+						<input type="button"
+							   onclick="prioridadeSelect(5)"
+							   name="p_5"
+							   value="Max."
+							   class="btn btn-lg"
+							   style="background:linear-gradient(to right,#FF6600 0%, #FF0000 100%);
+									  width:20%;
+									  border:none;
+									  text-align:right"/>
 					</div>
 				</div>
 			</div>
 	</div>
-	<input type="submit" name="btnSalvar" value="Salvar" class="btn btn-success btn-block btn-lg" align="center" style="position:fixed; bottom:0px">
+	<input type="submit"
+		   name="btnSalvar"
+		   value="Salvar"
+		   class="btn btn-success btn-block btn-lg" align="center" style="position:fixed; bottom:0px">
 	</form>
 	</div>
 
 
 	<footer>
 		<!-- JS -->
-		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 	</footer>
 
